@@ -1,0 +1,523 @@
+/* Resetear estilos */
+body,
+table,
+td,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: Arial, sans-serif;
+  
+}
+
+body a{
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: none; /* Ocultar el borde de la tabla */
+}
+
+table td,
+table th {
+  border: none; /* Ocultar los bordes de las celdas */
+  outline: none; /* Asegurarse de que no haya ningún borde de contorno */
+}
+
+table tr {
+  border: none; /* Ocultar los bordes de las filas */
+}
+
+.email-container {
+  width: 100%;
+}
+
+.banner-wrapper {
+  position: relative;
+  color: #0f2c6d;
+  overflow: hidden;
+}
+
+.banner-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.651) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1; /* Asegura que la superposición esté detrás del texto */
+}
+
+.banner-wrapper img {
+  width: 100%;
+  height: auto; /* Mantén la proporción de la imagen */
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+  top: 75%; /* Ajusta según sea necesario */
+  left: 18%; /* Ajusta según sea necesario */
+  transform: translate(-50%, -50%); /* Centra el texto en el contenedor */
+  padding: 10px; /* Añade un poco de espacio alrededor del texto */
+  border-radius: 5px; /* Bordes redondeados opcionales */
+  text-align: left;
+  z-index: 2;
+}
+
+.font1 {
+  font-family: "museo", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.font2 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 35px;
+}
+
+.section {
+  padding: 20px;
+  /* border-bottom: 1px solid #e0e0e0; -->*/ /* lineas que separan las secciones */
+}
+
+.section_text {
+  text-align: center;
+}
+
+.section h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #707070;
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.section_text p {
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  color: #0f2c6d;
+}
+
+.carousel {
+  position: relative;
+  width: 70%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel input[type="radio"] {
+  display: none;
+}
+
+.carousel-items {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  width: 33.3333%;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img:first-child {
+  position: absolute;
+  top: 10%; /* Ajusta según tus necesidades */
+  left: 20%; /* Ajusta según tus necesidades */
+  width: 30px; /* Ajusta según tus necesidades */
+  z-index: 1;
+}
+
+.image-container img:last-child {
+  max-width: 100%;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.carousel h3 {
+  margin-bottom: 10px;
+  font-family: "museo", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #0f2c6d;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-controls {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-control {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#item-1:checked ~ .carousel-items {
+  transform: translateX(0);
+}
+
+#item-2:checked ~ .carousel-items {
+  transform: translateX(-33.3333%);
+}
+
+#item-3:checked ~ .carousel-items {
+  transform: translateX(-66.6666%);
+}
+
+#item-1:checked ~ .carousel-controls label[for="item-1"],
+#item-2:checked ~ .carousel-controls label[for="item-2"],
+#item-3:checked ~ .carousel-controls label[for="item-3"] {
+  background: #0f2c6d;
+}
+
+.carousel-items p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.carousel-item p:nth-of-type(2) {
+  font-family: "museo", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.recipe,
+.product,
+.collab {
+  margin-bottom: 20px;
+}
+
+.recipe h3,
+.collab h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.product-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-text h2 {
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  color: #0f2c6d;
+}
+
+.product-text p {
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #707070;
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+}
+
+.product {
+  flex: 1;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 5px;
+}
+
+.small-img {
+  width: 80%;
+}
+
+.product h3 {
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-family: "lato", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.product p:nth-of-type(2) {
+  margin-top: 20px;
+  color: #0f2c6d;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+.button-link {
+  background-color: #0f2c6d;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px;
+  width: 130px;
+  border-radius: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.button-link:hover {
+  background-color: #0d254f;
+}
+
+.sorteo-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sorteo-text h2 {
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  color: #0f2c6d;
+}
+
+.sorteo-text p {
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #707070;
+}
+
+.sorteo-img img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade sombra suave */
+}
+
+.footer-img img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.footer-img {
+  position: relative;
+  text-align: center;
+}
+
+.background-image {
+  width: 100%;
+  display: block;
+}
+
+.logo {
+  width: 15%;
+  position: absolute;
+  top: 30%; /* Ajusta la posición verticalmente */
+  left: 20%; /* Ajusta la posición horizontalmente */
+  transform: translate(-50%, -50%); /* Centra el logo */
+  z-index: 1; /* Coloca el logo encima de otros elementos */
+}
+
+.footer-text {
+  position: absolute;
+  left: 5%; /* Alineación a la izquierda */
+  top: 46%;
+  color: #0f2c6d;
+  z-index: 1;
+  width: auto; /* Ajustar ancho según el contenido */
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.footer-text-dos {
+  position: absolute;
+  left: 5%; /* Alineación a la izquierda */
+  top: 59%; /* Ajuste de la posición */
+  color: #0f2c6d;
+  z-index: 1;
+  width: auto; /* Ajustar ancho según el contenido */
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.footer-text-tres {
+  position: absolute;
+  left: 5%; /* Alineación a la izquierda */
+  top: 72%; /* Ajuste de la posición */
+  color: #0f2c6d;
+  z-index: 1;
+  width: auto; /* Ajustar ancho según el contenido */
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+}
+
+
+.footer-bar {
+  background-color: #6fbfe9; /* Color azul de la banda */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  align-items: center;
+}
+
+.footer-links,
+.footer-rrss {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link,
+.footer-rrss-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  font-family: "lato", sans-serif;
+}
+
+.privacy-policy {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
+}
+
+.left-section {
+  flex: 1; /* Toma el espacio necesario */
+  text-align: left;
+  font-family: "museo", sans-serif;
+  font-size: 12px;
+  color: #0f2c6d;
+}
+
+.right-section {
+  flex: 2; /* Toma el doble de espacio que el de la izquierda */
+  text-align: right;
+  font-family: "museo", sans-serif;
+  font-size: 12px;
+  color: #0f2c6d;
+}
+
+.right-section a {
+  text-decoration: none;
+  color: #0f2c6d;
+}
+
+/* Estilos generales para dispositivos pequeños */
+@media only screen and (max-width: 600px) {
+  .banner-text {
+    top: 65%; /* Ajuste según sea necesario */
+    left: 24%; /* Ajuste según sea necesario */
+  }
+
+  .font2 {
+    font-size: 25px;
+  }
+
+  .carousel {
+    width: 90%; /* Ajuste según sea necesario */
+  }
+
+  .small-img {
+    width: 30%;
+  }
+
+  .product-container {
+    flex-direction: column; /* Cambia a columna en dispositivos pequeños */
+  }
+
+  .logo {
+    width: 20%; /* Ajuste según sea necesario */
+    top: 20%; /* Ajuste según sea necesario */
+
+    transform: translate(-50%, -50%);
+  }
+
+  .footer-text,
+  .footer-text-dos,
+  .footer-text-tres {
+    font-size: 22px; /* Ajuste según sea necesario */
+  }
+}

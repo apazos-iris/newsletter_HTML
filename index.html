@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter de Prueba</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/pjh0rxp.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/foj0uki.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ukm6jhw.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <table class="email-container">
+      <tr>
+        <td class="header">
+          <!-- la cabecera-->
+          <div class="banner-wrapper">
+            <div class="banner-text">
+              <p class="font1">Este verano…</p>
+              <p class="font2">Ensaladilla de</p>
+              <p class="font2">langostinos y</p>
+              <p class="font2">macarrones</p>
+            </div>
+            <img src="img/banner.jpg" alt="Banner del Newsletter" />
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="section">
+          <!-- la seccion de recetas-->
+          <div class="section_text">
+            <h2>DISFRUTA CADA DÍA DE</h2>
+            <p>NUESTRAS RECETAS</p>
+          </div>
+
+          <div class="carousel">
+            <!-- estos son los botones del carrusel-->
+            <input type="radio" name="carousel" id="item-1" checked />
+            <input type="radio" name="carousel" id="item-2" />
+            <input type="radio" name="carousel" id="item-3" />
+
+            <div class="carousel-items">
+              <!-- los elementos del carrusel-->
+              <div class="carousel-item">
+                <div class="image-container">
+                  <img class="corazon" src="img/corazon.png" alt="corazon" />
+                  <img src="img/receta1.jpg" alt="Receta 1" />
+                </div>
+                <h3>ARROZ NEGRO CON CALAMARES</h3>
+                <p>
+                  Descripción de la receta: Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Dolor assumenda quae doloribus
+                  in dolore! Eveniet maiores.
+                </p>
+                <p>
+                  COMIDA |
+                  <i class="fa-solid fa-utensils" style="color: #74c0fc"></i>
+                  FÁCIL |
+                  <i class="fa-solid fa-clock" style="color: #74c0fc"></i> 25
+                  MIN
+                </p>
+              </div>
+              <div class="carousel-item">
+                <div class="image-container">
+                  <img class="corazon" src="img/corazon.png" alt="corazon" />
+                  <img src="img/receta2.jpg" alt="Receta 2" />
+                </div>
+                <h3>ENSALADILLA DE LANGOSTINOS</h3>
+                <p>
+                  Descripción de la receta: Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Dolor assumenda quae doloribus
+                  in dolore! Eveniet maiores.
+                </p>
+                <p>
+                  COMIDA |
+                  <i class="fa-solid fa-utensils" style="color: #74c0fc"></i>
+                  FÁCIL |
+                  <i class="fa-solid fa-clock" style="color: #74c0fc"></i> 25
+                  MIN
+                </p>
+              </div>
+              <div class="carousel-item">
+                <div class="image-container">
+                  <img class="corazon" src="img/corazon.png" alt="corazon" />
+                  <img src="img/receta3.jpg" alt="Receta 3" />
+                </div>
+                <h3>TARTAR DE LANGOSTINOS</h3>
+                <p>
+                  Descripción de la receta: Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Dolor assumenda quae doloribus
+                  in dolore! Eveniet maiores.
+                </p>
+                <p>
+                  COMIDA |
+                  <i class="fa-solid fa-utensils" style="color: #74c0fc"></i>
+                  FÁCIL |
+                  <i class="fa-solid fa-clock" style="color: #74c0fc"></i> 25
+                  MIN
+                </p>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <!-- añadir más controles-->
+              <label for="item-1" class="carousel-control"></label>
+              <label for="item-2" class="carousel-control"></label>
+              <label for="item-3" class="carousel-control"></label>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="section">
+          <!-- la seccion de los productos de destacados-->
+          <div class="product-text">
+            <h2>Productos Destacados</h2>
+            <p>Estos son los productos que te recomendamos este mes.</p>
+          </div>
+          <div class="product-container">
+            <div class="product">
+              <img src="img/calamar.jpg" alt="Producto 1" class="small-img" />
+              <h3>Calamar limpio 400g</h3>
+              <p>6,99 € <span style="color: #707070">(17,45 € /kg)</span></p>
+              <p>Ultracongelado</p>
+              <a href="#" target="_blank" class="button-link">
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="color: #ffffff; margin-right: 3px"
+                ></i>
+                Añadir al carro
+              </a>
+            </div>
+            <div class="product">
+              <img src="img/gambas.jpg" alt="Producto 2" />
+              <h3>Rodolfos cocidos 200g</h3>
+              <p>6,99 € <span style="color: #707070">(17,45 € /kg)</span></p>
+              <p>Ultracongelado</p>
+              <a href="" target="_blank" class="button-link">
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="color: #ffffff; margin-right: 3px"
+                ></i>
+                Añadir al carro
+              </a>
+            </div>
+            <div class="product">
+              <img src="img/palitos.jpg" alt="Producto 3" />
+              <h3>Palitos de Mar 250g</h3>
+              <p>3,75 € <span style="color: #707070">(17,45 € /kg)</span></p>
+              <p>Ultracongelado</p>
+              <a href="#" target="_blank" class="button-link">
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="color: #ffffff; margin-right: 3px"
+                ></i>
+                Añadir al carro
+              </a>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="section">
+          <!-- la seccion de sorteo-->
+          <div class="sorteo-text">
+            <h2>Sorteo</h2>
+            <p>¡Para celebrar el verano con alegría!</p>
+          </div>
+          <div class="sorteo-img">
+            <img src="img/sorteo.jpg" alt="imagen del sorteo" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="footer">
+          <div class="footer-img">
+            <img
+              src="img/banner_footer.jpg"
+              alt="imagen del footer"
+              class="background-image"
+            />
+            <img
+              src="img/logo_pescanova.png"
+              alt="imagen del logo"
+              class="logo"
+            />
+            <p class="footer-text">Síguenos para no</p>
+            <p class="footer-text-dos">perderte ninguna</p>
+            <p class="footer-text-tres">receta</p>
+          </div>
+
+          <div class="footer-bar">
+            <div class="footer-links">
+              <a
+                href="https://www.pescanova.es/"
+                target="_blank"
+                class="footer-link"
+                >www.pescanova.es</a
+              >
+            </div>
+            <div class="footer-rrss">
+              <a href="#" class="footer-rrss-link" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="footer-rrss-link" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="footer-rrss-link" target="_blank"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="#" class="footer-rrss-link" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="footer-rrss-link"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="privacy-policy">
+            <div class="left-section">
+              <p>© 2024 PESCANOVA ESPAÑA, S.L.U.</p>
+            </div>
+            <div class="right-section">
+              <p>
+                <a href="#" target="_blank">Aviso Legal</a> /
+                <a href="#" target="_blank">Política de Cookies</a> /
+                <a href="#" target="_blank">Política de privacidad</a> /
+                <a href="#" target="_blank">Cumplimiento y Buenas Prácticas</a>
+                / <a href="#" target="_blank">Bases Legales</a> /
+                <a href="#" target="_blank">Bases Legales E-Commerce</a> /
+                <a href="#" target="_blank">Condiciones y Términos de compra</a>
+                /
+                <a href="#" target="_blank">Promociones y descuentos</a>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
