@@ -85,7 +85,7 @@ table tr {
   width: 100%; /* Ocupa todo el ancho */
   text-align: center; /* Centra el logo */
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   display: flex; /* Usamos flexbox para centrar */
   justify-content: center; /* Centra el logo horizontalmente */
   align-items: center; /* Centra el logo verticalmente */
