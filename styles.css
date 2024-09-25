@@ -79,6 +79,25 @@ table tr {
   display: block;
 }
 
+
+.white-band {
+  background-color: white; /* Banda blanca */
+  width: 100%; /* Ocupa todo el ancho */
+  text-align: center; /* Centra el logo */
+  margin: 10px; /* Espacio entre la banda y el contenido */
+  display: flex; /* Usamos flexbox para centrar */
+  justify-content: center; /* Centra el logo horizontalmente */
+  align-items: center; /* Centra el logo verticalmente */
+}
+
+.logo_first {
+  width: 10%; /* Ajusta el ancho del logo al 10% del contenedor */
+  max-width: 150px; /* Tamaño máximo del logo */
+  height: auto; /* Mantiene la proporción del logo */
+  object-fit: contain; /* Ajuste del logo dentro de su contenedor */
+}
+
+
 .banner-text {
   position: absolute;
   top: 75%; /* Ajusta según sea necesario */

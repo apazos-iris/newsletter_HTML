@@ -1,331 +1,263 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Newsletter de Prueba</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/pjh0rxp.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/foj0uki.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/ukm6jhw.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <table class="email-container">
-      <tr>
-        <td class="header">
-          <!-- la cabecera-->
-          <div class="banner-wrapper">
-            <div class="banner-text">
-              <p class="font1">Este Octubre…</p>
-              <p class="font2">Bacalao al horno</p>
-              <p class="font2">horno con verduras</p>
-            </div>
-            <img src="img/bacalao.jpg" alt="Banner del Newsletter" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter de Prueba</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/pjh0rxp.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/foj0uki.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/ukm6jhw.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <table class="email-container">
+    <tr>
+      <td class="header">
+        <!-- Banda de color blanco con el logo (lo primero) -->
+        <div class="white-band">
+          <img src="img/logo.png" alt="Logo de la empresa" class="logo_first">
+        </div>
+    
+        <!-- Contenido del banner -->
+        <div class="banner-wrapper">
+          <div class="banner-text">
+            <p class="font1">Este Octubre…</p>
+            <p class="font2">Bacalao al horno</p>
+            <p class="font2">horno con verduras</p>
           </div>
-        </td>
-      </tr>
+          
+          <img src="img/bacalao.jpg" alt="Banner del Newsletter" />
+        </div>
+      </td>
+    </tr>
+    
 
-      <tr>
-        <td class="section">
-          <!-- la seccion de recetas-->
-          <div class="section_text">
-            <h2>DISFRUTA CADA DÍA CON</h2>
-            <p>NUESTRAS RECETAS</p>
-          </div>
+    <tr>
+      <td class="section">
+        <!-- la seccion de recetas-->
+        <div class="section_text">
+          <h2>DISFRUTA CADA DÍA CON</h2>
+          <p>NUESTRAS RECETAS</p>
+        </div>
 
-          <div class="carousel">
-            <!-- estos son los botones del carrusel-->
-            <input type="radio" name="carousel" id="item-1" checked />
-            <input type="radio" name="carousel" id="item-2" />
-            <input type="radio" name="carousel" id="item-3" />
+        <div class="carousel">
+          <!-- estos son los botones del carrusel-->
+          <input type="radio" name="carousel" id="item-1" checked />
+          <input type="radio" name="carousel" id="item-2" />
+          <input type="radio" name="carousel" id="item-3" />
 
-            <div class="carousel-items">
-              <!-- los elementos del carrusel-->
-              <div class="carousel-item">
-                <div class="image-container">
-                  <a
-                    href="https://www.pescanova.es/recetas/merluza-al-horno-con-salsa-verde/"
-                    target="_blank"
-                  >
-                    <img class="corazon" src="img/corazon.png" alt="corazon" />
-                    <img src="img/receta1.jpg" alt="Receta 1" />
-                  </a>
-                </div>
-                <h3>MERLUZA AL HORNO CON SALSA VERDE</h3>
-                <p>
-                  Disfruta de una receta de corazones de
-                  <strong
-                    >merluza al horno con una increíble salsa verde</strong
-                  >
-                  que hará de tu plato un manjar. Con esta receta, podrás
-                  mezclar
-                  <strong>diferentes sabores y texturas.</strong> ¡Atrévete a
-                  innovar en tus recetas de merluza para descubrir
-                  <strong>platos sanos pero riquísimos</strong>!
-                </p>
-                <p>
-                  COMIDA |
-                  <i class="fa-solid fa-utensils" style="color: #74c0fc"></i>
-                  INTERMEDIO |
-                  <i class="fa-solid fa-clock" style="color: #74c0fc"></i> 40
-                  MIN
-                </p>
+          <div class="carousel-items">
+            <!-- los elementos del carrusel-->
+            <div class="carousel-item">
+              <div class="image-container">
+                <a href="https://www.pescanova.es/recetas/merluza-al-horno-con-salsa-verde/" target="_blank">
+                  <img class="corazon" src="img/corazon.png" alt="corazon" />
+                  <img src="img/receta1.jpg" alt="Receta 1" />
+                </a>
               </div>
-              <div class="carousel-item">
-                <div class="image-container">
-                  <a
-                    href="https://www.pescanova.es/recetas/peskitos-de-merluza-en-airfryer/"
-                    target="_blank"
-                  >
-                    <img class="corazon" src="img/corazon.png" alt="corazon" />
-                    <img src="img/recetas2.jpg" alt="Recetas 2" />
-                  </a>
-                </div>
-                <h3>PESKITOS DE MERLUZA EN AIRFRYER</h3>
-                <p>
-                  Disfruta de unos deliciosos
-                  <strong>peskitos</strong>, acompañados de una
-                  <strong>salsa de curry y miel</strong> que llevará tus
-                  sentidos al siguiente nivel. Podrás combinar
-                  <strong>sabores irresistibles</strong> y
-                  <strong>texturas perfectas</strong>. ¡Atrévete a innovar en tu
-                  cocina con un plato lleno de <strong>sabor</strong>!
-                </p>
-                <p>
-                  APERITIVO |
-                  <i class="fa-solid fa-utensils" style="color: #74c0fc"></i>
-                  INTERMEDIO |
-                  <i class="fa-solid fa-clock" style="color: #74c0fc"></i> 40
-                  MIN
-                </p>
-              </div>
-              <div class="carousel-item">
-                <div class="image-container">
-                  <a
-                    href="https://www.pescanova.es/recetas/guiso-de-pulpo-con-patatas/"
-                    target="_blank"
-                  >
-                    <img class="corazon" src="img/corazon.png" alt="corazon" />
-                    <img src="img/receta3.jpg" alt="Receta 3"
-                  /></a>
-                </div>
-                <h3>GUISO DE PULPO CON PATATAS</h3>
-                <p>
-                  Disfruta de un exquisito <strong>guiso</strong> donde combinar
-                  lo mejor del <strong>pulpo</strong> con una deliciosa base de
-                  <strong>tomate</strong>, <strong>pimiento choricero</strong> y
-                  <strong>pimentón de la vera</strong>, acompañada de tiernas
-                  <strong>patatas</strong> cocinadas a fuego lento.¡Atrévete a
-                  preparar este plato y sorprende a tus comensales!
-                </p>
-
-                <p>
-                  COMIDA |
-                  <i class="fa-solid fa-utensils" style="color: #74c0fc"></i>
-                  INTERMEDIO |
-                  <i class="fa-solid fa-clock" style="color: #74c0fc"></i> 1
-                  HORA
-                </p>
-              </div>
-            </div>
-            <div class="carousel-controls">
-              <!-- añadir más controles-->
-              <label for="item-1" class="carousel-control"></label>
-              <label for="item-2" class="carousel-control"></label>
-              <label for="item-3" class="carousel-control"></label>
-            </div>
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td class="section">
-          <!-- la seccion de los productos de destacados-->
-          <div class="product-text">
-            <h2>Productos Destacados</h2>
-            <p>Estos son los productos que te recomendamos este mes.</p>
-          </div>
-          <div class="product-container">
-            <div class="product">
-              <img
-                src="img/producto_1.jpg"
-                alt="Producto 1"
-                class="small-img"
-              />
-              <h3>Pescadinos 800g</h3>
-              <p>7,99 € <span style="color: #707070">(9,99 €/Kg)</span></p>
-              <p>Ultracongelado</p>
-              <a
-                href="https://www.pescanova.es/tienda/pescado-rebozado/pescadinos-800g/"
-                target="_blank"
-                class="button-link"
-              >
-                <i
-                  class="fa-solid fa-cart-shopping"
-                  style="color: #ffffff; margin-right: 3px"
-                ></i>
-                Añadir al carro
-              </a>
-            </div>
-
-            <div class="product">
-              <img src="img/producto_2.jpg" alt="Producto 2" />
-              <h3>Merluza empanada al limón 400g</h3>
-              <p>3,99 € <span style="color: #707070">(9,97 €/Kg)</span></p>
-              <p>Ultracongelado</p>
-              <a
-                href="https://www.pescanova.es/tienda/pescado-rebozado/merluza-empanada-al-limon-400g/"
-                target="_blank"
-                class="button-link"
-              >
-                <i
-                  class="fa-solid fa-cart-shopping"
-                  style="color: #ffffff; margin-right: 3px"
-                ></i>
-                Añadir al carro
-              </a>
-            </div>
-
-            <div class="product">
-              <img src="img/producto_3.jpg" alt="Producto 3" />
-              <h3>Corazones de Merluza del Cabo sin piel 500g</h3>
-              <p>8,09 € <span style="color: #707070">(16,18 €/Kg)</span></p>
-              <p>Ultracongelado</p>
-              <a
-                href="https://www.pescanova.es/tienda/pescados/merluza/corazones-de-merluza-500g/"
-                target="_blank"
-                class="button-link"
-              >
-                <i
-                  class="fa-solid fa-cart-shopping"
-                  style="color: #ffffff; margin-right: 3px"
-                ></i>
-                Añadir al carro
-              </a>
-            </div>
-
-            <div class="product">
-              <img src="img/producto_4.jpg" alt="Producto 3" />
-              <h3>Lomos de Bacalao en su punto de sal 300g</h3>
-              <p>6,99 € <span style="color: #707070">(23,30 €/Kg)</span></p>
-              <p>Ultracongelado</p>
-              <a
-                href="https://www.pescanova.es/tienda/pescados/bacalao/lomos-de-bacalao-300g/"
-                target="_blank"
-                class="button-link"
-              >
-                <i
-                  class="fa-solid fa-cart-shopping"
-                  style="color: #ffffff; margin-right: 3px"
-                ></i>
-                Añadir al carro
-              </a>
-            </div>
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td class="section">
-          <!-- la seccion de sorteo-->
-          <div class="sorteo-text">
-            <h2>Sorteo</h2>
-            <p>¡Para celebrar el verano con alegría!</p>
-          </div>
-          <div class="sorteo-img">
-            <img src="img/sorteo1.jpg" alt="imagen del sorteo" />
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="footer">
-          <div class="footer-img">
-            <img
-              src="img/banner_footer.jpg"
-              alt="imagen del footer"
-              class="background-image"
-            />
-            <img
-              src="img/logo_pescanova.png"
-              alt="imagen del logo"
-              class="logo"
-            />
-            <p class="footer-text">Síguenos para no</p>
-            <p class="footer-text-dos">perderte ninguna</p>
-            <p class="footer-text-tres">receta</p>
-          </div>
-
-          <div class="footer-bar">
-            <div class="footer-links">
-              <a
-                href="https://www.pescanova.es/"
-                target="_blank"
-                class="footer-link"
-                >www.pescanova.es</a
-              >
-            </div>
-            <div class="footer-rrss">
-              <a
-                href="https://www.youtube.com/user/videorecetas"
-                class="footer-rrss-link"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/pescanova_es/"
-                class="footer-rrss-link"
-                target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                href="https://www.tiktok.com/@pescanova_es"
-                class="footer-rrss-link"
-                target="_blank"
-                ><i class="fab fa-tiktok"></i
-              ></a>
-              <a
-                href="https://www.facebook.com/pescanova/"
-                class="footer-rrss-link"
-                target="_blank"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a
-                href="https://x.com/pescanova_es?lang=es"
-                class="footer-rrss-link"
-                target="_blank"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="privacy-policy">
-            <div class="single-column">
+              <h3>MERLUZA AL HORNO CON SALSA VERDE</h3>
               <p>
-                Estás recibiendo este correo electrónico porque te has suscrito
-                a nuestro servicio de Newsletter. Para más información, consulta
-                nuestra política de privacidad. ¿No quieres seguir recibiendo
-                estos correos? Puedes
-                <a
-                  href="https://pescanova.us13.list-manage.com/unsubscribe?u=735584e8323f490c3f36c53c3&id=79378f0634&t=b&e=3b37c33f7c&c=6bb26d4b54"
-                  target="_blank"
-                  >darte de baja aquí</a
-                >
-                o actualizar tus preferencias.
+                Disfruta de una receta de corazones de
+                <strong>merluza al horno con una increíble salsa verde</strong>
+                que hará de tu plato un manjar. Con esta receta, podrás
+                mezclar
+                <strong>diferentes sabores y texturas.</strong> ¡Atrévete a
+                innovar en tus recetas de merluza para descubrir
+                <strong>platos sanos pero riquísimos</strong>!
               </p>
-              <p><strong>Nuestra dirección de correo es:</strong></p>
-              <p> <i>
+              <p>
+                COMIDA |
+                <i class="fa-solid fa-utensils" style="color: #74c0fc"></i>
+                INTERMEDIO |
+                <i class="fa-solid fa-clock" style="color: #74c0fc"></i> 40
+                MIN
+              </p>
+            </div>
+            <div class="carousel-item">
+              <div class="image-container">
+                <a href="https://www.pescanova.es/recetas/peskitos-de-merluza-en-airfryer/" target="_blank">
+                  <img class="corazon" src="img/corazon.png" alt="corazon" />
+                  <img src="img/recetas2.jpg" alt="Recetas 2" />
+                </a>
+              </div>
+              <h3>PESKITOS DE MERLUZA EN AIRFRYER</h3>
+              <p>
+                Disfruta de unos deliciosos
+                <strong>peskitos</strong>, acompañados de una
+                <strong>salsa de curry y miel</strong> que llevará tus
+                sentidos al siguiente nivel. Podrás combinar
+                <strong>sabores irresistibles</strong> y
+                <strong>texturas perfectas</strong>. ¡Atrévete a innovar en tu
+                cocina con un plato lleno de <strong>sabor</strong>!
+              </p>
+              <p>
+                APERITIVO |
+                <i class="fa-solid fa-utensils" style="color: #74c0fc"></i>
+                INTERMEDIO |
+                <i class="fa-solid fa-clock" style="color: #74c0fc"></i> 40
+                MIN
+              </p>
+            </div>
+            <div class="carousel-item">
+              <div class="image-container">
+                <a href="https://www.pescanova.es/recetas/guiso-de-pulpo-con-patatas/" target="_blank">
+                  <img class="corazon" src="img/corazon.png" alt="corazon" />
+                  <img src="img/receta3.jpg" alt="Receta 3" /></a>
+              </div>
+              <h3>GUISO DE PULPO CON PATATAS</h3>
+              <p>
+                Disfruta de un exquisito <strong>guiso</strong> donde combinar
+                lo mejor del <strong>pulpo</strong> con una deliciosa base de
+                <strong>tomate</strong>, <strong>pimiento choricero</strong> y
+                <strong>pimentón de la vera</strong>, acompañada de tiernas
+                <strong>patatas</strong> cocinadas a fuego lento.¡Atrévete a
+                preparar este plato y sorprende a tus comensales!
+              </p>
+
+              <p>
+                COMIDA |
+                <i class="fa-solid fa-utensils" style="color: #74c0fc"></i>
+                INTERMEDIO |
+                <i class="fa-solid fa-clock" style="color: #74c0fc"></i> 1
+                HORA
+              </p>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <!-- añadir más controles-->
+            <label for="item-1" class="carousel-control"></label>
+            <label for="item-2" class="carousel-control"></label>
+            <label for="item-3" class="carousel-control"></label>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="section">
+        <!-- la seccion de los productos de destacados-->
+        <div class="product-text">
+          <h2>Productos Destacados</h2>
+          <p>Estos son los productos que te recomendamos este mes.</p>
+        </div>
+        <div class="product-container">
+          <div class="product">
+            <img src="img/producto_1.jpg" alt="Producto 1" class="small-img" />
+            <h3>Pescadinos 800g</h3>
+            <p>7,99 € <span style="color: #707070">(9,99 €/Kg)</span></p>
+            <p>Ultracongelado</p>
+            <a href="https://www.pescanova.es/tienda/pescado-rebozado/pescadinos-800g/" target="_blank"
+              class="button-link">
+              <i class="fa-solid fa-cart-shopping" style="color: #ffffff; margin-right: 3px"></i>
+              Añadir al carro
+            </a>
+          </div>
+
+          <div class="product">
+            <img src="img/producto_2.jpg" alt="Producto 2" />
+            <h3>Merluza empanada al limón 400g</h3>
+            <p>3,99 € <span style="color: #707070">(9,97 €/Kg)</span></p>
+            <p>Ultracongelado</p>
+            <a href="https://www.pescanova.es/tienda/pescado-rebozado/merluza-empanada-al-limon-400g/" target="_blank"
+              class="button-link">
+              <i class="fa-solid fa-cart-shopping" style="color: #ffffff; margin-right: 3px"></i>
+              Añadir al carro
+            </a>
+          </div>
+
+          <div class="product">
+            <img src="img/producto_3.jpg" alt="Producto 3" />
+            <h3>Corazones de Merluza del Cabo sin piel 500g</h3>
+            <p>8,09 € <span style="color: #707070">(16,18 €/Kg)</span></p>
+            <p>Ultracongelado</p>
+            <a href="https://www.pescanova.es/tienda/pescados/merluza/corazones-de-merluza-500g/" target="_blank"
+              class="button-link">
+              <i class="fa-solid fa-cart-shopping" style="color: #ffffff; margin-right: 3px"></i>
+              Añadir al carro
+            </a>
+          </div>
+
+          <div class="product">
+            <img src="img/producto_4.jpg" alt="Producto 3" />
+            <h3>Lomos de Bacalao en su punto de sal 300g</h3>
+            <p>6,99 € <span style="color: #707070">(23,30 €/Kg)</span></p>
+            <p>Ultracongelado</p>
+            <a href="https://www.pescanova.es/tienda/pescados/bacalao/lomos-de-bacalao-300g/" target="_blank"
+              class="button-link">
+              <i class="fa-solid fa-cart-shopping" style="color: #ffffff; margin-right: 3px"></i>
+              Añadir al carro
+            </a>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="section">
+        <!-- la seccion de sorteo-->
+        <div class="sorteo-text">
+          <h2>Sorteo</h2>
+          <p>¡Para celebrar el verano con alegría!</p>
+        </div>
+        <div class="sorteo-img">
+          <img src="img/sorteo1.jpg" alt="imagen del sorteo" />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="footer">
+        <div class="footer-img">
+          <img src="img/banner_footer.jpg" alt="imagen del footer" class="background-image" />
+          <img src="img/logo_pescanova.png" alt="imagen del logo" class="logo" />
+          <p class="footer-text">Síguenos para no</p>
+          <p class="footer-text-dos">perderte ninguna</p>
+          <p class="footer-text-tres">receta</p>
+        </div>
+
+        <div class="footer-bar">
+          <div class="footer-links">
+            <a href="https://www.pescanova.es/" target="_blank" class="footer-link">www.pescanova.es</a>
+          </div>
+          <div class="footer-rrss">
+            <a href="https://www.youtube.com/user/videorecetas" class="footer-rrss-link"><i
+                class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/pescanova_es/" class="footer-rrss-link" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@pescanova_es" class="footer-rrss-link" target="_blank"><i
+                class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/pescanova/" class="footer-rrss-link" target="_blank"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://x.com/pescanova_es?lang=es" class="footer-rrss-link" target="_blank"><i
+                class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="privacy-policy">
+          <div class="single-column">
+            <p>
+              Estás recibiendo este correo electrónico porque te has suscrito
+              a nuestro servicio de Newsletter. Para más información, consulta
+              nuestra política de privacidad. ¿No quieres seguir recibiendo
+              estos correos? Puedes
+              <a href="https://pescanova.us13.list-manage.com/unsubscribe?u=735584e8323f490c3f36c53c3&id=79378f0634&t=b&e=3b37c33f7c&c=6bb26d4b54"
+                target="_blank">darte de baja aquí</a>
+              o actualizar tus preferencias.
+            </p>
+            <p><strong>Nuestra dirección de correo es:</strong></p>
+            <p> <i>
                 Pescanova Fish Solutions<br />Rúa José Fernández López S/N<br />Chapela-Redondela,
                 Pontevedra 36320, Spain<br />Agréguenos a su libreta de direcciones</p></i>
-              <p><i>
+            <p><i>
                 Copyright © 2023 Pescanova Fish Solutions, All rights reserved.</i>
-              </p>
-            </div>
+            </p>
           </div>
-        </td>
-      </tr>
-    </table>
-  </body>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+
 </html>
