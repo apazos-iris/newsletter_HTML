@@ -104,3 +104,33 @@ body {
     background-color: #218838; /* Darker green on hover */
   }
   
+
+  
+.privacy-policy {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
+  }
+  
+  .left-section {
+    flex: 1; /* Toma el espacio necesario */
+    text-align: left;
+    font-family: "lato", sans-serif;
+    font-size: 12px;
+    color: #0f2c6d;
+  }
+  
+  .right-section {
+    flex: 2; /* Toma el doble de espacio que el de la izquierda */
+    text-align: right;
+    font-family: "lato", sans-serif;
+    font-size: 12px;
+    color: #0f2c6d;
+  }
+  
+  .right-section a {
+    text-decoration: none;
+    color: #0f2c6d;
+  }

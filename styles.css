@@ -475,48 +475,40 @@ table tr {
 .privacy-policy {
   padding: 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
-}
-
-.left-section {
-  flex: 1; /* Toma el espacio necesario */
-  text-align: left;
+  flex-direction: column; /* Cambia la dirección para que los elementos se apilen verticalmente */
+  align-items: flex-start; /* Alinea los elementos al inicio en horizontal */
   font-family: "lato", sans-serif;
   font-size: 12px;
   color: #0f2c6d;
 }
 
-.right-section {
-  flex: 2; /* Toma el doble de espacio que el de la izquierda */
-  text-align: right;
-  font-family: "lato", sans-serif;
-  font-size: 12px;
+.single-column p {
+  margin-bottom: 10px; /* Añade espacio entre párrafos */
+}
+
+.single-column a {
   color: #0f2c6d;
 }
 
-.right-section a {
-  text-decoration: none;
-  color: #0f2c6d;
+.single-column {
+  text-align: center;
 }
+
 
 /* Estilos generales para dispositivos pequeños */
 @media only screen and (max-width: 600px) {
   .banner-text {
-    top: 65%; /* Ajuste según sea necesario */
+    top: 75%; /* Ajuste según sea necesario */
     left: 24%; /* Ajuste según sea necesario */
   }
 
   .font2 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .carousel {
     width: 90%; /* Ajuste según sea necesario */
   }
-
-  
 
   .product-container {
     flex-direction: column; /* Cambia a columna en dispositivos pequeños */
