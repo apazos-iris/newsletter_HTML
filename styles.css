@@ -84,7 +84,8 @@ table tr {
   background-color: white; /* Banda blanca */
   width: 100%; /* Ocupa todo el ancho */
   text-align: center; /* Centra el logo */
-  margin: 10px; /* Espacio entre la banda y el contenido */
+  margin-top: 15px;
+  margin-bottom: 15px;
   display: flex; /* Usamos flexbox para centrar */
   justify-content: center; /* Centra el logo horizontalmente */
   align-items: center; /* Centra el logo verticalmente */
