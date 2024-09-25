@@ -83,7 +83,7 @@ table tr {
 .banner-text {
   position: absolute;
   top: 75%; /* Ajusta según sea necesario */
-  left: 18%; /* Ajusta según sea necesario */
+  left: 25%; /* Ajusta según sea necesario */
   transform: translate(-50%, -50%); /* Centra el texto en el contenedor */
   padding: 10px; /* Añade un poco de espacio alrededor del texto */
   border-radius: 5px; /* Bordes redondeados opcionales */
