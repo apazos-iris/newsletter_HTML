@@ -69,3 +69,38 @@ body {
 #item-3:checked ~ .carousel-controls label[for="item-3"] {
     background: #333;
 }
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusts number of columns based on screen size */
+    gap: 16px; /* Space between grid items */
+    padding: 16px; /* Padding around the grid */
+  }
+  
+  .product {
+    background-color: #fff; /* Background color for products */
+    border: 1px solid #e0e0e0; /* Border around products */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Padding inside product boxes */
+    text-align: center; /* Center text inside product boxes */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  }
+  
+  .product img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .button-link {
+    background-color: #28a745; /* Change to your preferred button color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  .button-link:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
