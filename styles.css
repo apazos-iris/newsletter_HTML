@@ -315,7 +315,6 @@ table tr {
 .product img {
   max-width: 100%; /* Asegurar que las imágenes sean responsivas */
   height: auto; /* Mantener la proporción de aspecto */
-  margin-bottom: 10px; /* Espacio entre la imagen y el texto */
 }
 
 .product h3 {
