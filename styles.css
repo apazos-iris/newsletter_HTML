@@ -392,12 +392,6 @@ table tr {
     font-size: 0.675rem; /* Disminuir tamaño de fuente base */
   }
 
-  .banner-text {
-    top: 70%; /* Mover el texto un poco más arriba */
-    left: 30%; /* Centrar el texto */
-    transform: translate(-50%, -50%); /* Centrar usando transform */
-    padding: 5px; /* Reducir el padding */
-  }
 
   .font2 {
     font-size: 1.5rem; /* Reducir tamaño de fuente para encabezados */
@@ -439,12 +433,6 @@ table tr {
     font-size: 0.875rem; /* Reduce el tamaño de la fuente base */
   }
 
-  .banner-text {
-    top: 70%; /* Ajusta la posición */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Centra el texto */
-    font-size: 1.5rem; /* Ajuste del tamaño de fuente */
-  }
 
   .font2 {
     font-size: 1.5rem; /* Ajuste del tamaño de fuente */
