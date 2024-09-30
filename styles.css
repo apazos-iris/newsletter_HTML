@@ -1,25 +1,27 @@
 /* Resetear estilos */
-body,
-table,
-td,
-p,
-h1,
-h2,
-h3 {
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #0f2c6d;
+  --secondary-color: #707070;
+  --background-color: #f4f4f4;
+  --font-family-lato: "Lato", sans-serif;
+  --font-family-museo: "Museo Sans", sans-serif;
+  --font-size-base: 1rem; /* Ajusta esto si cambias el tamaño base de fuente */
+}
+
+/* General */
 body {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-size: var(--font-size-base);
 }
 
 body a {
@@ -30,18 +32,17 @@ table {
   border-collapse: collapse;
   width: 100%;
   max-width: 800px;
-  height: auto;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: none; /* Ocultar el borde de la tabla */
+  border: none;
 }
 
 table td,
 table th,
 table tr {
-  border: none; /* Ocultar los bordes de las celdas */
-  outline: none; /* Asegurarse de que no haya ningún borde de contorno */
+  border: none;
+  outline: none;
 }
 
 .email-container {
@@ -50,7 +51,6 @@ table tr {
 
 .banner-wrapper {
   position: relative;
-  color: #0f2c6d;
   overflow: hidden;
 }
 
@@ -61,67 +61,58 @@ table tr {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to top,
-    rgba(255, 255, 255, 0.295) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  z-index: 1; /* Asegura que la superposición esté detrás del texto */
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.295) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
 }
 
 .banner-wrapper img {
   width: 100%;
-  height: auto; /* Mantén la proporción de la imagen */
+  height: auto;
   display: block;
 }
 
 .white-band {
-  background-color: white; /* Banda blanca */
-  width: 100%; /* Ocupa todo el ancho */
-  text-align: center; /* Centra el logo */
-  margin-top: 15px;
-  margin-bottom: 10px;
-  display: flex; /* Usamos flexbox para centrar */
-  justify-content: center; /* Centra el logo horizontalmente */
-  align-items: center; /* Centra el logo verticalmente */
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  margin: 15px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo_first {
-  width: 10%; /* Ajusta el ancho del logo al 10% del contenedor */
-  max-width: 150px; /* Tamaño máximo del logo */
-  height: auto; /* Mantiene la proporción del logo */
-  object-fit: contain; /* Ajuste del logo dentro de su contenedor */
+  width: min(150px, 10%);
+  height: auto;
+  object-fit: contain;
 }
 
 .banner-text {
   position: absolute;
-  top: 75%; /* Ajusta según sea necesario */
-  left: 25%; /* Ajusta según sea necesario */
-  transform: translate(-50%, -50%); /* Centra el texto en el contenedor */
-  padding: 10px; /* Añade un poco de espacio alrededor del texto */
-  border-radius: 5px; /* Bordes redondeados opcionales */
+  top: 75%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 5px;
   text-align: left;
   z-index: 2;
 }
 
 .font1 {
-  font-family: "lato", serif;
+  font-family: var(--font-family-lato);
   font-weight: 300;
-  font-style: normal;
-  font-size: 15px;
+  font-size: 0.9375rem; /* 15px */
   margin-bottom: 5px;
 }
 
 .font2 {
-  font-size: 35px;
-  font-family: museo-sans, sans-serif;
-  font-style: normal;
+  font-size: 2.1875rem; /* 35px */
+  font-family: var(--font-family-museo);
   font-weight: 700;
 }
 
 .section {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 
 .section_text {
@@ -129,20 +120,17 @@ table tr {
 }
 
 .section h2 {
-  margin-top: 25px;
-  margin-bottom: 10px;
-  color: #707070;
-  font-family: "lato", sans-serif;
+  margin: 25px 0 10px;
+  color: var(--secondary-color);
+  font-family: var(--font-family-lato);
   font-weight: 300;
-  font-style: normal;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .section_text p {
-  font-size: 30px;
-  color: #0f2c6d;
-  font-family: museo-sans, sans-serif;
-  font-style: normal;
+  font-size: 1.875rem; /* 30px */
+  color: var(--primary-color);
+  font-family: var(--font-family-museo);
   font-weight: 700;
 }
 
@@ -179,14 +167,13 @@ table tr {
 
 .image-container img:first-child {
   position: absolute;
-  top: 10%; /* Ajusta según tus necesidades */
-  left: 20%; /* Ajusta según tus necesidades */
-  width: 30px; /* Ajusta según tus necesidades */
+  top: 10%;
+  left: 20%;
+  width: 30px;
   z-index: 1;
 }
 
 .image-container img:last-child {
-  max-width: 100%;
   width: 80%;
   border-radius: 10px;
 }
@@ -197,9 +184,8 @@ table tr {
 
 .carousel h3 {
   margin-bottom: 10px;
-  color: #0f2c6d;
-  font-family: museo-sans, sans-serif;
-  font-style: normal;
+  color: var(--primary-color);
+  font-family: var(--font-family-museo);
   font-weight: 700;
 }
 
@@ -240,26 +226,23 @@ table tr {
 #item-1:checked ~ .carousel-controls label[for="item-1"],
 #item-2:checked ~ .carousel-controls label[for="item-2"],
 #item-3:checked ~ .carousel-controls label[for="item-3"] {
-  background: #0f2c6d;
+  background: var(--primary-color);
 }
 
 .carousel-items p {
   margin-bottom: 10px;
   color: #666;
-  font-family: "lato", sans-serif;
+  font-family: var(--font-family-lato);
   font-weight: 100;
-  font-style: normal;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .carousel-item p:nth-of-type(2) {
-  font-size: 12px;
+  font-size: 0.75rem;
   margin-bottom: 30px;
-  font-family: museo-sans, sans-serif;
-  font-style: normal;
+  font-family: var(--font-family-museo);
   font-weight: 200;
 }
-
 
 .recipe h3,
 .collab h3 {
@@ -268,78 +251,74 @@ table tr {
   color: #333;
 }
 
-
 .product-text {
   text-align: center;
   margin-bottom: 30px;
 }
 
 .product-text h2 {
-  font-size: 30px;
-  color: #0f2c6d;
-  font-family: museo-sans, sans-serif;
-  font-style: normal;
+  font-size: 1.875rem;
+  color: var(--primary-color);
+  font-family: var(--font-family-museo);
   font-weight: 700;
 }
 
 .product-text p {
-  font-family: "lato", sans-serif;
+  font-family: var(--font-family-lato);
   font-weight: 300;
-  font-style: normal;
-  font-size: 15px;
+  font-size: 0.9375rem;
   margin-bottom: 20px;
-  color: #707070;
+  color: var(--secondary-color);
 }
 
 .product-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Mantener 2 columnas */
-  gap: 16px; /* Espacio entre los elementos de la cuadrícula */
-  padding: 16px; /* Padding alrededor del contenedor */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 16px;
 }
 
 .product {
-  background-color: #fff; /* Color de fondo para los productos */
-  border: 1px solid #e0e0e0; /* Borde alrededor de los productos */
-  border-radius: 8px; /* Esquinas redondeadas */
-  padding: 16px; /* Padding dentro de los cuadros de productos */
-  text-align: left; /* Alinear texto a la izquierda dentro de los productos */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para elevación */
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
-  max-width: 100%; /* Asegurar que las imágenes sean responsivas */
-  height: auto; /* Mantener la proporción de aspecto */
+  width: 100%;
+  height: auto;
 }
 
 .product h3 {
-  font-family: "lato", sans-serif;
+  font-family: var(--font-family-lato);
   font-weight: 900;
-  font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
 .product p {
-  font-family: "lato", sans-serif;
+  font-family: var(--font-family-lato);
   font-weight: 200;
-  font-size: 13px;
-  margin-bottom: 5px; /* Espacio entre los párrafos */
+  font-size: 0.8125rem;
+  margin-bottom: 5px;
 }
 
 .product p:nth-of-type(2) {
   margin-top: 10px;
-  color: #0f2c6d;
-  font-size: 12px;
+  color: var(--primary-color);
+  font-size: 0.75rem;
 }
 
 .button-link {
-  background-color: #0f2c6d;
+  background-color: var(--primary-color);
   color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  padding: 10px; /* Mantener el padding */
-  width: calc(100% - 20px); /* Ajustar ancho con relación al padding */
+  font-family: var(--font-family-lato);
+  font-size: 0.75rem;
+  padding: 10px;
+  width: calc(100% - 20px);
   border-radius: 12px;
   cursor: pointer;
   text-decoration: none;
@@ -348,7 +327,6 @@ table tr {
   transition: background-color 0.3s ease;
   margin-top: 10px;
 }
-
 
 .button-link:hover {
   background-color: #071631;
@@ -360,28 +338,27 @@ table tr {
 }
 
 .sorteo-text h2 {
-  font-size: 30px;
-  color: #0f2c6d;
-  font-family: museo-sans, sans-serif;
-  font-style: normal;
+  font-size: 1.875rem;
+  color: var(--primary-color);
+  font-family: var(--font-family-museo);
   font-weight: 700;
 }
 
 .sorteo-text p {
-  font-family: "lato", sans-serif;
+  font-family: var(--font-family-lato);
   font-weight: 300;
-  font-style: normal;
-  font-size: 15px;
+  font-size: 0.9375rem;
   margin-bottom: 20px;
-  color: #707070;
+  color: var(--secondary-color);
 }
 
 .sorteo-img img {
-  max-width: 100%;
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade sombra suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+
 
 .footer-img img {
   margin-top: 20px;
@@ -493,32 +470,102 @@ table tr {
 
 /* Estilos generales para dispositivos pequeños */
 @media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.675rem; /* Disminuir tamaño de fuente base */
+  }
+
   .banner-text {
-    top: 75%; /* Ajuste según sea necesario */
-    left: 30%; /* Ajuste según sea necesario */
+    top: 70%; /* Mover el texto un poco más arriba */
+    left: 30%; /* Centrar el texto */
+    transform: translate(-50%, -50%); /* Centrar usando transform */
+    padding: 5px; /* Reducir el padding */
   }
 
   .font2 {
-    font-size: 20px;
+    font-size: 1.5rem; /* Reducir tamaño de fuente para encabezados */
   }
 
   .carousel {
-    width: 90%; /* Ajuste según sea necesario */
+    width: 95%; /* Ajustar ancho del carrusel */
+    margin: 10px auto; /* Añadir margen */
   }
 
   .product-container {
-    flex-direction: column; /* Cambia a columna en dispositivos pequeños */
+    grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    padding: 10px; /* Reducir padding */
   }
 
   .logo {
-    width: 20%; /* Ajuste según sea necesario */
-    top: 20%; /* Ajuste según sea necesario */
-    transform: translate(-50%, -50%);
+    width: 30%; /* Aumentar el tamaño del logo */
+    top: 10%; /* Ajustar posición del logo */
+  }
+
+  .section_text p, .product-text h2 {
+    font-size: 20px;
   }
 
   .footer-text,
   .footer-text-dos,
   .footer-text-tres {
-    font-size: 22px; /* Ajuste según sea necesario */
+    font-size: 18px; /* Reducir tamaño de fuente del footer */
+    text-align: center; /* Centrar texto del footer */
   }
+
+  .button-link {
+    font-size: 0.8rem; /* Ajustar tamaño del texto del botón */
+    padding: 8px; /* Ajustar padding */
+  }
+
+  .carousel-item > p:first-of-type {
+    display: none;
+  }
+
+}
+
+/* Media query para dispositivos de 320px de ancho */
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 0.875rem; /* Reduce el tamaño de la fuente base */
+  }
+
+  .banner-text {
+    top: 70%; /* Ajusta la posición */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    font-size: 1.5rem; /* Ajuste del tamaño de fuente */
+  }
+
+  .font2 {
+    font-size: 1.5rem; /* Ajuste del tamaño de fuente */
+  }
+
+  .carousel {
+    width: 100%; /* Ajusta el ancho */
+  }
+
+  .product-container {
+    grid-template-columns: 1fr; /* Una columna en lugar de dos */
+  }
+
+  .logo {
+    width: 30%; /* Ajusta el tamaño del logo */
+    top: 15%; /* Ajusta la posición */
+  }
+
+  .footer-text,
+  .footer-text-dos,
+  .footer-text-tres {
+    font-size: 18px; /* Ajuste según sea necesario */
+  }
+
+  .button-link {
+    font-size: 0.7rem; /* Ajusta el tamaño de la fuente del botón */
+    padding: 8px; /* Reduce el padding */
+  }
+
+  .section {
+    padding: 0 10px; /* Reduce el padding lateral */
+  }
+
+  /* Otros ajustes específicos según sea necesario */
 }
