@@ -54,17 +54,6 @@ table tr {
   overflow: hidden;
 }
 
-.banner-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.295) 0%, rgba(0, 0, 0, 0) 100%);
-  z-index: 1;
-}
-
 .banner-wrapper img {
   width: 100%;
   height: auto;
@@ -358,8 +347,6 @@ table tr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-
-
 .footer-img img {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -383,45 +370,6 @@ table tr {
   left: 20%; /* Ajusta la posición horizontalmente */
   transform: translate(-50%, -50%); /* Centra el logo */
   z-index: 1; /* Coloca el logo encima de otros elementos */
-}
-
-.footer-text {
-  position: absolute;
-  left: 5%; /* Alineación a la izquierda */
-  top: 46%;
-  color: #0f2c6d;
-  z-index: 1;
-  width: auto; /* Ajustar ancho según el contenido */
-  font-family: "lato", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 40px;
-}
-
-.footer-text-dos {
-  position: absolute;
-  left: 5%; /* Alineación a la izquierda */
-  top: 59%; /* Ajuste de la posición */
-  color: #0f2c6d;
-  z-index: 1;
-  width: auto; /* Ajustar ancho según el contenido */
-  font-family: "lato", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 40px;
-}
-
-.footer-text-tres {
-  position: absolute;
-  left: 5%; /* Alineación a la izquierda */
-  top: 72%; /* Ajuste de la posición */
-  color: #0f2c6d;
-  z-index: 1;
-  width: auto; /* Ajustar ancho según el contenido */
-  font-family: "lato", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 40px;
 }
 
 .footer-bar {
@@ -500,15 +448,9 @@ table tr {
     top: 10%; /* Ajustar posición del logo */
   }
 
-  .section_text p, .product-text h2 {
+  .section_text p,
+  .product-text h2 {
     font-size: 20px;
-  }
-
-  .footer-text,
-  .footer-text-dos,
-  .footer-text-tres {
-    font-size: 18px; /* Reducir tamaño de fuente del footer */
-    text-align: center; /* Centrar texto del footer */
   }
 
   .button-link {
@@ -519,7 +461,6 @@ table tr {
   .carousel-item > p:first-of-type {
     display: none;
   }
-
 }
 
 /* Media query para dispositivos de 320px de ancho */
@@ -550,12 +491,6 @@ table tr {
   .logo {
     width: 30%; /* Ajusta el tamaño del logo */
     top: 15%; /* Ajusta la posición */
-  }
-
-  .footer-text,
-  .footer-text-dos,
-  .footer-text-tres {
-    font-size: 18px; /* Ajuste según sea necesario */
   }
 
   .button-link {
