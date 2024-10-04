@@ -12,6 +12,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
+    <style>
+      /* Media query para pantallas pequeñas (600px o menos) */
+      @media only screen and (max-width: 600px) {
+        .small-text {
+          font-size: 20px !important; /* El uso de !important ayuda en correos electrónicos */
+        }
+        .small-heading {
+          font-size: 13px !important;
+        }
+
+        .small-heading-h3 {
+          font-size: 11px !important;
+        }
+
+        .small-text-h3 {
+          font-size: 9px !important; /* El uso de !important ayuda en correos electrónicos */
+        }
+
+
+      }
+    </style>
+
+
   </head>
 
   <!DOCTYPE html>
@@ -78,7 +102,7 @@
           <td class="section" style="padding: 20px; text-align: center">
             <!-- Sección de recetas -->
             <div>
-              <h2
+              <h2 class="small-heading"
                 style="
                   font-family: 'Lato', sans-serif;
                   color: #707070;
@@ -89,7 +113,7 @@
               >
                 Disfruta cada día con
               </h2>
-              <p
+              <p class="small-text"
                 style="
                   color: #0f2c6d;
                   font-size: 1.875rem;
@@ -108,11 +132,18 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
+                flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
                 text-align: center;
               "
             >
               <!-- Producto 1 -->
-              <div style="width: 30%; padding: 10px">
+              <div
+                style="
+                  width: 30%;
+                  padding: 10px;
+                  box-sizing: border-box; /* Asegura que el padding no desborde el ancho */
+                "
+              >
                 <div class="image-container" style="text-align: center">
                   <a
                     href="https://www.pescanova.es/recetas/merluza-al-horno-con-salsa-verde/"
@@ -125,22 +156,23 @@
                     />
                   </a>
                 </div>
-                <h3
+                <h3 class="small-heading-h3"
                   style="
                     font-family: 'Museo Sans', sans-serif;
                     color: #0f2c6d;
                     font-weight: 700;
-                    font-size: small;
+                    font-size: 15px;
+                    margin: 10px 0 5px;
                   "
                 >
                   MERLUZA AL HORNO CON SALSA VERDE
                 </h3>
-
-                <p
+                <p class="small-text-h3"
                   style="
                     font-family: 'Museo Sans', sans-serif;
                     color: #707070;
-                    font-size: 12px;
+                    font-size: 10px;
+                    margin: 0;
                   "
                 >
                   COMIDA |
@@ -152,7 +184,7 @@
               </div>
 
               <!-- Producto 2 -->
-              <div style="width: 30%; padding: 10px">
+              <div style="width: 30%; padding: 10px; box-sizing: border-box">
                 <div class="image-container" style="text-align: center">
                   <a
                     href="https://www.pescanova.es/recetas/peskitos-de-merluza-en-airfryer/"
@@ -165,21 +197,23 @@
                     />
                   </a>
                 </div>
-                <h3
+                <h3 class="small-heading-h3"
                   style="
                     font-family: 'Museo Sans', sans-serif;
                     color: #0f2c6d;
                     font-weight: 700;
-                    font-size: small;
+                    font-size: 15px;
+                    margin: 10px 0 5px;
                   "
                 >
                   PESKITOS DE MERLUZA EN AIRFRYER
                 </h3>
-                <p
+                <p class="small-text-h3"
                   style="
                     font-family: 'Museo Sans', sans-serif;
                     color: #707070;
-                    font-size: 12px;
+                    font-size: 10px;
+                    margin: 0;
                   "
                 >
                   APERITIVO |
@@ -191,7 +225,7 @@
               </div>
 
               <!-- Producto 3 -->
-              <div style="width: 30%; padding: 10px">
+              <div style="width: 30%; padding: 10px; box-sizing: border-box">
                 <div class="image-container" style="text-align: center">
                   <a
                     href="https://www.pescanova.es/recetas/guiso-de-pulpo-con-patatas/"
@@ -204,21 +238,23 @@
                     />
                   </a>
                 </div>
-                <h3
+                <h3 class="small-heading-h3"
                   style="
                     font-family: 'Museo Sans', sans-serif;
                     color: #0f2c6d;
                     font-weight: 700;
-                    font-size: small;
+                    font-size: 15px;
+                    margin: 10px 0 5px;
                   "
                 >
                   GUISO DE PULPO CON PATATAS
                 </h3>
-                <p
+                <p class="small-text-h3"
                   style="
                     font-family: 'Museo Sans', sans-serif;
                     color: #707070;
-                    font-size: 12px;
+                    font-size: 10px;
+                    margin: 0;
                   "
                 >
                   COMIDA |
@@ -237,7 +273,7 @@
             class="product-text"
             style="text-align: center; margin-bottom: 30px"
           >
-            <h2
+            <h2 class="small-text"
               style="
                 font-size: 1.875rem;
                 color: #0f2c6d;
@@ -248,7 +284,7 @@
             >
               Productos Destacados
             </h2>
-            <p
+            <p class="small-heading"
               style="
                 font-family: 'Lato', sans-serif;
                 font-weight: 300;
@@ -429,7 +465,7 @@
             class="sorteo-text"
             style="text-align: center; margin-bottom: 30px"
           >
-            <h2
+            <h2 class="small-text"
               style="
                 font-size: 1.875rem;
                 color: #0f2c6d;
@@ -440,7 +476,7 @@
             >
               Sorteo
             </h2>
-            <p
+            <p class="small-heading"
               style="
                 font-family: 'Lato', sans-serif;
                 font-weight: 300;
