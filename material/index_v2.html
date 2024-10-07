@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter de Prueba</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/pjh0rxp.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/foj0uki.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ukm6jhw.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      /* Media query para pantallas pequeñas (600px o menos) */
+      @media only screen and (max-width: 600px) {
+        .small-text {
+          font-size: 20px !important; /* El uso de !important ayuda en correos electrónicos */
+        }
+        .small-heading {
+          font-size: 13px !important;
+        }
+
+        .small-heading-h3 {
+          font-size: 11px !important;
+        }
+
+        .small-text-h3 {
+          font-size: 9px !important; /* El uso de !important ayuda en correos electrónicos */
+        }
+
+
+      }
+    </style>
+
+
+  </head>
+
+  <!DOCTYPE html>
+  <html lang="es">
+    <body
+      style="
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #f4f4f4;
+        color: #0f2c6d;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      "
+    >
+      <table
+        class="email-container"
+        style="
+          border-collapse: collapse;
+          width: 100%;
+          max-width: 800px;
+          margin: 0 auto;
+          background-color: #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          border: none;
+        "
+      >
+        <tr>
+          <td
+            class="white-band"
+            style="
+              width: 100%;
+              text-align: center;
+              margin: 15px 0 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img
+              class="logo_first"
+              src="img/logo.png"
+              alt="Logo"
+              style="width: min(150px, 10%); height: auto; object-fit: contain"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="banner-wrapper"
+            style="position: relative; overflow: hidden"
+          >
+            <img
+              src="img/banner_top.jpg"
+              alt="Banner Principal"
+              style="width: 100%; height: auto; display: block"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td class="section" style="padding: 20px; text-align: center">
+            <!-- Sección de recetas -->
+            <div>
+              <h2 class="small-heading"
+                style="
+                  font-family: 'Lato', sans-serif;
+                  color: #707070;
+                  font-weight: 300;
+                  font-size: 0.9375rem;
+                  margin-bottom: 5px;
+                "
+              >
+                Disfruta cada día con
+              </h2>
+              <p class="small-text"
+                style="
+                  color: #0f2c6d;
+                  font-size: 1.875rem;
+                  font-family: 'Museo Sans', sans-serif;
+                  font-weight: 700;
+                  margin-top: 10px;
+                "
+              >
+                Nuestras Recetas
+              </p>
+            </div>
+
+            <!-- Grid de recetas -->
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+                text-align: center;
+              "
+            >
+              <!-- Producto 1 -->
+              <div
+                style="
+                  width: 30%;
+                  padding: 10px;
+                  box-sizing: border-box; /* Asegura que el padding no desborde el ancho */
+                "
+              >
+                <div class="image-container" style="text-align: center">
+                  <a
+                    href="https://www.pescanova.es/recetas/merluza-al-horno-con-salsa-verde/"
+                    target="_blank"
+                  >
+                    <img
+                      src="img/receta1.jpg"
+                      alt="Receta 1"
+                      style="width: 100%; height: auto"
+                    />
+                  </a>
+                </div>
+                <h3 class="small-heading-h3"
+                  style="
+                    font-family: 'Museo Sans', sans-serif;
+                    color: #0f2c6d;
+                    font-weight: 700;
+                    font-size: 15px;
+                    margin: 10px 0 5px;
+                  "
+                >
+                  MERLUZA AL HORNO CON SALSA VERDE
+                </h3>
+                <p class="small-text-h3"
+                  style="
+                    font-family: 'Museo Sans', sans-serif;
+                    color: #707070;
+                    font-size: 10px;
+                    margin: 0;
+                  "
+                >
+                  COMIDA |
+                  <i style="color: #db0b0b" class="fa-solid fa-utensils"></i>
+                  INTERMEDIO |
+                  <i style="color: #db0b0b" class="fa-solid fa-clock"></i> 40
+                  MIN
+                </p>
+              </div>
+
+              <!-- Producto 2 -->
+              <div style="width: 30%; padding: 10px; box-sizing: border-box">
+                <div class="image-container" style="text-align: center">
+                  <a
+                    href="https://www.pescanova.es/recetas/peskitos-de-merluza-en-airfryer/"
+                    target="_blank"
+                  >
+                    <img
+                      src="img/recetas2.jpg"
+                      alt="Recetas 2"
+                      style="width: 100%; height: auto"
+                    />
+                  </a>
+                </div>
+                <h3 class="small-heading-h3"
+                  style="
+                    font-family: 'Museo Sans', sans-serif;
+                    color: #0f2c6d;
+                    font-weight: 700;
+                    font-size: 15px;
+                    margin: 10px 0 5px;
+                  "
+                >
+                  PESKITOS DE MERLUZA EN AIRFRYER
+                </h3>
+                <p class="small-text-h3"
+                  style="
+                    font-family: 'Museo Sans', sans-serif;
+                    color: #707070;
+                    font-size: 10px;
+                    margin: 0;
+                  "
+                >
+                  APERITIVO |
+                  <i style="color: #db0b0b" class="fa-solid fa-utensils"></i>
+                  INTERMEDIO |
+                  <i style="color: #db0b0b" class="fa-solid fa-clock"></i> 40
+                  MIN
+                </p>
+              </div>
+
+              <!-- Producto 3 -->
+              <div style="width: 30%; padding: 10px; box-sizing: border-box">
+                <div class="image-container" style="text-align: center">
+                  <a
+                    href="https://www.pescanova.es/recetas/guiso-de-pulpo-con-patatas/"
+                    target="_blank"
+                  >
+                    <img
+                      src="img/receta3.jpg"
+                      alt="Receta 3"
+                      style="width: 100%; height: auto"
+                    />
+                  </a>
+                </div>
+                <h3 class="small-heading-h3"
+                  style="
+                    font-family: 'Museo Sans', sans-serif;
+                    color: #0f2c6d;
+                    font-weight: 700;
+                    font-size: 15px;
+                    margin: 10px 0 5px;
+                  "
+                >
+                  GUISO DE PULPO CON PATATAS
+                </h3>
+                <p class="small-text-h3"
+                  style="
+                    font-family: 'Museo Sans', sans-serif;
+                    color: #707070;
+                    font-size: 10px;
+                    margin: 0;
+                  "
+                >
+                  COMIDA |
+                  <i style="color: #db0b0b" class="fa-solid fa-utensils"></i>
+                  INTERMEDIO |
+                  <i style="color: #db0b0b" class="fa-solid fa-clock"></i> 1
+                  HORA
+                </p>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td
+            class="product-text"
+            style="text-align: center; margin-bottom: 30px"
+          >
+            <h2 class="small-text"
+              style="
+                font-size: 1.875rem;
+                color: #0f2c6d;
+                font-family: 'Museo Sans', sans-serif;
+                font-weight: 700;
+                margin-bottom: 5px;
+              "
+            >
+              Productos Destacados
+            </h2>
+            <p class="small-heading"
+              style="
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 0.9375rem;
+                margin-bottom: 20px;
+                color: #707070;
+                margin-top: 10px;
+              "
+            >
+              Estos son los productos que te recomendamos este mes.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div
+              class="product-container"
+              style="
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+                padding: 16px;
+              "
+            >
+              <div
+                class="product"
+                style="
+                  background-color: #fff;
+                  border: 1px solid #e0e0e0;
+                  border-radius: 8px;
+                  padding: 16px;
+                  text-align: left;
+                  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                  box-sizing: border-box;
+                "
+              >
+                <img
+                  src="img/producto_1.jpg"
+                  alt="Producto A"
+                  style="width: 100%; height: auto"
+                />
+                <h3
+                  style="
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 900;
+                    font-size: 1rem;
+                    margin-bottom: 10px;
+                  "
+                >
+                  Pescadinos 800g
+                </h3>
+                <p
+                  style="
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 200;
+                    font-size: 0.8125rem;
+                    margin-bottom: 5px;
+                  "
+                >
+                  7,99 €
+                </p>
+                <p
+                  style="
+                    margin-top: 10px;
+                    color: #707070;
+                    font-size: 0.75rem;
+                    font-family: 'Lato', sans-serif;
+                  "
+                >
+                  (9,99 €/Kg)
+                </p>
+                <a
+                  href="https://www.pescanova.es/tienda/pescado-rebozado/pescadinos-800g/"
+                  target="_blank"
+                  class="button-link"
+                  style="
+                    background-color: #0f2c6d;
+                    color: white;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 0.75rem;
+                    padding: 10px;
+                    width: 100%;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    display: inline-block;
+                    text-align: center;
+                    margin-top: 10px;
+                    box-sizing: border-box;
+                  "
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    style="color: #ffffff; margin-right: 3px"
+                  ></i>
+                  Agregar al carrito
+                </a>
+              </div>
+              <div
+                class="product"
+                style="
+                  background-color: #fff;
+                  border: 1px solid #e0e0e0;
+                  border-radius: 8px;
+                  padding: 16px;
+                  text-align: left;
+                  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                  box-sizing: border-box;
+                "
+              >
+                <img
+                  src="img/productos_2.jpg"
+                  alt="Producto B"
+                  style="width: 100%; height: auto"
+                />
+                <h3
+                  style="
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 900;
+                    font-size: 1rem;
+                    margin-bottom: 10px;
+                  "
+                >
+                  Merluza empanada al limón 400g
+                </h3>
+                <p
+                  style="
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 200;
+                    font-size: 0.8125rem;
+                    margin-bottom: 5px;
+                  "
+                >
+                  3,99 €
+                </p>
+                <p
+                  style="
+                    margin-top: 10px;
+                    color: #707070;
+                    font-size: 0.75rem;
+                    font-family: 'Lato', sans-serif;
+                  "
+                >
+                  (9,97 €/Kg)
+                </p>
+                <a
+                  href="https://www.pescanova.es/tienda/pescado-rebozado/merluza-empanada-al-limon-400g/"
+                  class="button-link"
+                  style="
+                    background-color: #0f2c6d;
+                    color: white;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 0.75rem;
+                    padding: 10px;
+                    width: 100%;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    display: inline-block;
+                    text-align: center;
+                    margin-top: 10px;
+                    box-sizing: border-box;
+                  "
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    style="color: #ffffff; margin-right: 3px"
+                  ></i>
+                  Agregar al carrito
+                </a>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td
+            class="sorteo-text"
+            style="text-align: center; margin-bottom: 30px"
+          >
+            <h2 class="small-text"
+              style="
+                font-size: 1.875rem;
+                color: #0f2c6d;
+                font-family: 'Museo Sans', sans-serif;
+                font-weight: 700;
+                margin-bottom: 5px;
+              "
+            >
+              Sorteo
+            </h2>
+            <p class="small-heading"
+              style="
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 0.9375rem;
+                margin-bottom: 20px;
+                color: #707070;
+                margin-top: 10px;
+              "
+            >
+              ¡Consigue tu chubasquero!
+            </p>
+
+            <div class="sorteo-img">
+              <img
+                src="img/sorteo1.jpg"
+                alt="imagen del sorteo"
+                style="
+                  width: 100%;
+                  max-width: 600px; /* Limita el tamaño máximo en pantallas grandes */
+                  height: auto;
+                  border-radius: 10px;
+                  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                  margin-bottom: 30px;
+                "
+              />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="footer">
+            <div class="footer-img" style="text-align: center">
+              <a href="https://www.instagram.com/pescanova_es/" target="_blank">
+                <img
+                  src="img/banner_footer.jpg"
+                  alt="imagen del footer"
+                  class="background-image"
+                  style="width: 100%; height: auto"
+                />
+              </a>
+            </div>
+
+            <div
+              class="footer-bar"
+              style="
+                background-color: #6fbfe9;
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                align-items: center;
+              "
+            >
+              <div
+                class="footer-links"
+                style="display: flex; align-items: center"
+              >
+                <a
+                  href="https://www.pescanova.es/"
+                  target="_blank"
+                  class="footer-link"
+                  style="
+                    color: white;
+                    text-decoration: none;
+                    margin-right: 10px;
+                    font-family: 'Lato', sans-serif;
+                  "
+                >
+                  www.pescanova.es
+                </a>
+              </div>
+
+              <div
+                class="footer-rrss"
+                style="display: flex; align-items: center"
+              >
+                <a
+                  href="https://www.youtube.com/user/videorecetas"
+                  class="footer-rrss-link"
+                  style="
+                    color: white;
+                    text-decoration: none;
+                    margin-right: 10px;
+                    font-family: 'Lato', sans-serif;
+                  "
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/pescanova_es/"
+                  target="_blank"
+                  class="footer-rrss-link"
+                  style="
+                    color: white;
+                    text-decoration: none;
+                    margin-right: 10px;
+                    font-family: 'Lato', sans-serif;
+                  "
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@pescanova_es"
+                  target="_blank"
+                  class="footer-rrss-link"
+                  style="
+                    color: white;
+                    text-decoration: none;
+                    margin-right: 10px;
+                    font-family: 'Lato', sans-serif;
+                  "
+                >
+                  <i class="fab fa-tiktok"></i>
+                </a>
+                <a
+                  href="https://www.facebook.com/pescanova/"
+                  target="_blank"
+                  class="footer-rrss-link"
+                  style="
+                    color: white;
+                    text-decoration: none;
+                    margin-right: 10px;
+                    font-family: 'Lato', sans-serif;
+                  "
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a
+                  href="https://x.com/pescanova_es?lang=es"
+                  target="_blank"
+                  class="footer-rrss-link"
+                  style="
+                    color: white;
+                    text-decoration: none;
+                    font-family: 'Lato', sans-serif;
+                  "
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="privacy-policy"
+              style="
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                font-family: 'Lato', sans-serif;
+                font-size: 12px;
+                color: #0f2c6d;
+              "
+            >
+              <div class="single-column" style="text-align: center">
+                <p style="margin-bottom: 10px">
+                  Estás recibiendo este correo electrónico porque te has
+                  suscrito a nuestro servicio de Newsletter. Para más
+                  información, consulta nuestra política de privacidad. ¿No
+                  quieres seguir recibiendo estos correos? Puedes
+                  <a href="*|UNSUB|*" target="_blank" style="color: #0f2c6d"
+                    >darte de baja aquí</a
+                  >
+                  o actualizar tus preferencias.
+                </p>
+                <p><strong>Nuestra dirección de correo es:</strong></p>
+                <p style="margin-bottom: 10px">
+                  <i
+                    >Pescanova España<br />Rúa José Fernández López S/N<br />Chapela-Redondela,
+                    Pontevedra 36320, Spain<br
+                  /></i>
+                </p>
+                <p style="margin-bottom: 10px">
+                  <i
+                    ><a
+                      href="https://pescanova.us13.list-manage.com/track/click?u=735584e8323f490c3f36c53c3&id=90bc5eef2a&e=3b37c33f7c"
+                      target="_blank"
+                      style="color: #0f2c6d"
+                      >Agréguenos a su libreta de direcciones</a
+                    ></i
+                  >
+                </p>
+                <p><i>Copyright © 2024 Pescanova, All rights reserved.</i></p>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </body>
+  </html>
+</html>
